@@ -1,0 +1,15 @@
+---
+
+- name: Install wasm-pack required packages
+  apt:
+    name: ['libssl-dev', 'pkg-config']
+    state: present
+
+- name: Install wasm-pack
+  command: /root/.cargo/bin/cargo install wasm-pack creates=/root/.cargo/bin/wasm-pack
+
+
+- name: Make some rust binaries discoverable at the system bin path for easier usage. A hack, but a reliable one
+  file: src="/root/.cargo/bin/{{ item }}"
+        dest="/usr/bin/{{ item }}" state=link mode="u+rwx,g+rx,o+rx"
+  with_items: ['rustc', 'cargo', 'wasm-pack', 'rustup']

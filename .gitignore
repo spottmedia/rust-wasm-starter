@@ -1,2 +1,4 @@
 .idea
 *.pyc
+examples/hello-wasm/target
+node_modules

@@ -10,3 +10,8 @@
       nvm_node_version: "10.16.0"
       nvm_install_globally: ['gulp']
     - geerlingguy.nginx
+    - role: naftulikay.rust-dev
+      rust_user: root
+    - rust-wasm-starter-role
+    - role: votum.ngrok
+      ngrok_user: root
