@@ -1,0 +1,12 @@
+---
+- name: Converge
+  hosts: all
+  vars:
+    server_hostname: "dev-rust-wasm-starter-18-04"
+    release_status: "dev"
+
+  roles:
+    - role: grzegorznowak.nvm_node
+      nvm_node_version: "10.16.0"
+      nvm_install_globally: ['gulp']
+    - geerlingguy.nginx
