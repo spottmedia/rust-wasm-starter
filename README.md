@@ -30,9 +30,11 @@ Then the actual provisioning with
 #### Re-provisioning
 
 to update container to the latest from the repo
+
     molecule converge
 
 to scrap the machine and bring it back up
+
     molecule destroy && molecule converge
 
 the latter might be useful if you've broken the dev container too much and want a fresh start
