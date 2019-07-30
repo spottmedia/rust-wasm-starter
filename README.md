@@ -53,6 +53,7 @@ feel free to adjust as you go:
 * node
 * npm
 * nginx
+* ngrok
 
 all the above are symlinked back to he global `/bin` path so will be accessible from virtually
 every possible location and worker (including cron)
