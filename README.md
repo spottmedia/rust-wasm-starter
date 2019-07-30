@@ -73,7 +73,8 @@ the host system's IDE for development and then issue commands on the lxc machine
     cd examples/hello-wasm/site
     npm install
     nohup npm run serve > /tmp/hello-wasm-output.log &
-    # which should openup 0.0.0.0:8080 on lxc for access
+    # should open 0.0.0.0:8080 on lxc with the app running
+
     # optionally to expose the app via ngrok publicly
     # in case you are using it nested within other vms
     ngrok http 8080
