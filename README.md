@@ -64,7 +64,7 @@ every possible location and worker (including cron)
 
 
 note the root of the project will be mounted under `/var/www/rust-wasm-starter/` on the container, so you can use
-the host system's IDE for development and then issue command on the lxc machine to take effect if needed.
+the host system's IDE for development and then issue commands on the lxc machine to take effect if needed.
 
 
 ## Running the hello world sample
