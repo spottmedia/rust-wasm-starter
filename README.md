@@ -30,15 +30,15 @@ Then the actual provisioning (and integration testing) with
 
 #### Re-provisioning
 
-to update container to the latest from the repo
+just update machine
 
     molecule converge && molecule verify
 
-to scrap the machine and bring it back up
+scrap the machine and bring it back up
 
     molecule destroy && molecule converge && molecule verify
 
-the latter might be useful if you've broken the dev container too much and want a fresh start
+^ the latter might be useful if you've broken the dev container too much and want a fresh start
 
 
 ## Instaling the wasm stack
