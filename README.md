@@ -6,7 +6,7 @@ Based on https://developer.mozilla.org/en-US/docs/WebAssembly/rust_to_wasm
 ## Provisioning
 
 So that you don't have to fiddle with installing rust and npm dependencies manually
-
+Uses `Ansible`, `Ansible Galaxy` and `Molecule`
 
 ### Requirements
 
