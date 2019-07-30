@@ -42,6 +42,20 @@ the latter might be useful if you've broken the dev container too much and want 
 
 ## Instaling the wasm stack
 
+Once provisioned the resulting container will have all minimal core toolset installed already,
+feel free to adjust as you go:
+
+* rustc
+* rustup
+* cargo
+* wasm-pack
+* node
+* npm
+* nginx
+
+all the above are symlinked back to he global `/bin` path so will be accessible from virtually
+every possible location and worker (including cron)
+
 ### Access dev environment
 
 
@@ -52,17 +66,14 @@ note the root of the project will be mounted under `/var/www/rust-wasm-starter/`
 the host system's IDE for development and then issue command on the lxc machine to take effect if needed.
 
 
-### Install required packages
-
-    cargo install wasm-pack
-
-
 ## Running the hello world sample
 
     cd examples/hello-wasm/site
     npm install
     nohup npm run serve > /tmp/hello-wasm-output.log &
-    # optionally to expose the app via ngrok
+    # which should openup 0.0.0.0:8080 on lxc for access
+    # optionally to expose the app via ngrok publicly
+    # in case you are using it nested within other vms
     ngrok http 8080
 
 ## Adding own projects
