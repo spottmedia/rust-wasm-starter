@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install virtualenv build-essential nginx
+sudo apt install virtualenv build-essential nginx python-dev
 
 virtualenv provisioningenv
 . provisioningenv/bin/activate
