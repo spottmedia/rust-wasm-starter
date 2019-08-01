@@ -74,6 +74,7 @@ the host system's IDE for development and then issue commands on the lxc machine
     npm install
     nohup npm run serve > /tmp/hello-wasm-output.log &
     # should open 0.0.0.0:8080 on lxc with the app running
+    # issue lxc list to figure out what IP your container was assigned
 
     # optionally to expose the app via ngrok publicly
     # in case you are using it nested within other vms
