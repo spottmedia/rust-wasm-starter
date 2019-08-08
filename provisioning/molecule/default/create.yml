@@ -23,7 +23,7 @@
         source:
           type: image
           mode: pull
-          server: https://images.linuxcontainers.org
+          server: https://us.images.linuxcontainers.org/
           protocol: lxd
           alias: "{{ item.image }}"
         config:
