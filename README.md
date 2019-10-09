@@ -25,7 +25,7 @@ Then the actual provisioning (and integration testing) with
 
     cd provisioning
     ./bootstrap_provisioning.sh
-    . provisioningenv/bin/activate
+    source provisioningenv/bin/activate
     molecule converge && molecule verify
 
 #### Re-provisioning
