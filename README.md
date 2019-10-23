@@ -15,7 +15,12 @@ Uses `Ansible`, `Ansible Galaxy` and `Molecule`
 
 ### Setup
 
-if not done before, do `lxd init`. Normally just confirming defaults will suffice,
+
+if not done before, do `lxd init`. 
+Normally just confirming defaults will suffice:
+
+`lxd init --auto --storage-backend=dir`
+
 unless willing to delve into details of lxd/lxc specifically.
 
 
