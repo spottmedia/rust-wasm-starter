@@ -15,7 +15,12 @@ Uses `Ansible`, `Ansible Galaxy` and `Molecule`
 
 ### Setup
 
-if not done before, do `lxd init`. Normally just confirming defaults will suffice,
+
+if not done before, do `lxd init`. 
+Normally just confirming defaults will suffice:
+
+`lxd init --auto --storage-backend=dir`
+
 unless willing to delve into details of lxd/lxc specifically.
 
 
@@ -25,7 +30,7 @@ Then the actual provisioning (and integration testing) with
 
     cd provisioning
     ./bootstrap_provisioning.sh
-    . provisioningenv/bin/activate
+    source provisioningenv/bin/activate
     molecule converge && molecule verify
 
 #### Re-provisioning
