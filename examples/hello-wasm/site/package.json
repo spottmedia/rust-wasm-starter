@@ -4,8 +4,8 @@
   },
   "devDependencies": {
     "hello-wasm": "file:../pkg",
-    "webpack": "^4.42.*",
-    "webpack-cli": "^3.3.*",
-    "webpack-dev-server": "^3.10.*"
+    "webpack": "^4",
+    "webpack-cli": "^3",
+    "webpack-dev-server": "^3"
   }
 }
